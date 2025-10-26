@@ -12,15 +12,100 @@
   <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
   <link href="./build.css" rel="stylesheet">
   <title>William Mensah — Resume</title>
+  
+  <!-- Structured Data for ATS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "William Mensah",
+    "jobTitle": "Senior Software Engineer",
+    "email": "mensahjefferson69@gmail.com",
+    "telephone": "+233 20 253 48 96",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Accra",
+      "addressCountry": "Ghana"
+    },
+    "url": "https://mensah-portfolio.netlify.app/",
+    "sameAs": [
+      "https://www.linkedin.com/in/mensahjefferson/",
+      "https://github.com/cuuj69",
+      "https://www.upwork.com/freelancers/~01c1dd984dd9dc1589"
+    ],
+    "knowsAbout": [
+      "Python",
+      "TypeScript",
+      "Node.js",
+      "React",
+      "NestJS",
+      "FastAPI",
+      "ASP.NET Core",
+      "C#",
+      "Go",
+      "AWS",
+      "Azure",
+      "GCP",
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "DynamoDB",
+      "Microservices",
+      "Cloud Architecture",
+      "CI/CD"
+    ],
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Bachelor's Degree",
+        "educationalLevel": "Bachelor's Degree in Computer Engineering",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "All Nations University"
+        }
+      }
+    ],
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "All Nations University"
+    },
+    "worksFor": [
+      {
+        "@type": "Organization",
+        "name": "Complete Farmer",
+        "jobTitle": "Senior Full-Stack Developer",
+        "startDate": "2024-03"
+      },
+      {
+        "@type": "Organization",
+        "name": "Fastyr",
+        "jobTitle": "Senior Software Engineer",
+        "startDate": "2024-11",
+        "endDate": "2024-12"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <!-- Night Mode Toggle Button -->
-  <button class="night-mode-toggle" id="nightModeToggle" title="Toggle Night Mode">
-    🌙
-  </button>
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
 
-  <main class="font-firago hyphens-manual">
+  <!-- Action Buttons -->
+  <div class="action-buttons">
+    <!-- <button class="action-button print-button" id="printButton" title="Print Resume" aria-label="Print resume">
+      🖨️ Print
+    </button> -->
+    <button class="night-mode-toggle" id="nightModeToggle" title="Toggle Night Mode" aria-label="Toggle night mode">
+      🌙
+    </button>
+  </div>
+
+  <main id="main-content" class="font-firago hyphens-manual">
 
     <!-- Page -->
     <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white">
@@ -86,7 +171,7 @@
             <section class="mb-4.5 break-inside-avoid">
               <header>
                 <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  <a href="https://www.linkedin.com/company/completefarmer/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/company/completefarmer/" target="_blank" rel="noopener noreferrer" aria-label="Complete Farmer company page (opens in new tab)">
                     Complete Farmer (Agritech Company)
                   </a>
                 </h3>
@@ -116,7 +201,7 @@
           <section class="mb-4.5 break-inside-avoid">
             <header>
               <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                <a href="https://www.linkedin.com/company/fastyr/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/fastyr/" target="_blank" rel="noopener noreferrer" aria-label="Fastyr company page (opens in new tab)">
                   Fastyr (AI Sales Platform)
                 </a>
               </h3>
@@ -143,7 +228,7 @@
           <section class="mb-4.5 break-inside-avoid">
             <header>
               <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                <a href="https://www.upwork.com/freelancers/~01c1dd984dd9dc1589" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.upwork.com/freelancers/~01c1dd984dd9dc1589" target="_blank" rel="noopener noreferrer" aria-label="Upwork freelance profile (opens in new tab)">
                   Upwork (Freelance Marketplace)
                 </a>
               </h3>
@@ -166,7 +251,7 @@
           <section class="mb-4.5 break-inside-avoid">
             <header>
               <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                <a href="https://www.linkedin.com/company/scalemorph/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/scalemorph/" target="_blank" rel="noopener noreferrer" aria-label="scaleMorph company page (opens in new tab)">
                   scaleMorph (SaaS Development)
                 </a>
               </h3>
@@ -200,7 +285,7 @@
             <section class="mb-4.5 break-inside-avoid">
               <header>
                 <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  <a href="https://www.linkedin.com/company/anuofficial/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/company/anuofficial/" target="_blank" rel="noopener noreferrer" aria-label="All Nations University page (opens in new tab)">
                     All Nations University
                   </a>
                 </h3>
@@ -247,7 +332,7 @@
           <section class="mb-4.5 break-inside-avoid">
             <header>
               <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                <a href="https://github.com/cuuj69/fastyr_ai_pipeline" target="_blank" rel="noopener noreferrer" class="group">
+                <a href="https://github.com/cuuj69/fastyr_ai_pipeline" target="_blank" rel="noopener noreferrer" class="group" aria-label="Fastyr AI Pipeline GitHub repository (opens in new tab)">
                   Fastyr AI Pipeline
                   <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
                 </a>
@@ -266,7 +351,7 @@
           <section class="mb-4.5 break-inside-avoid">
             <header>
               <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                <a href="https://github.com/cuuj69/htmlPdf" target="_blank" rel="noopener noreferrer" class="group">
+                <a href="https://github.com/cuuj69/htmlPdf" target="_blank" rel="noopener noreferrer" class="group" aria-label="HTML to PDF Translator GitHub repository (opens in new tab)">
                   HTML to PDF Translator
                   <span
                     class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
@@ -318,39 +403,39 @@
             <div class="my-3.2 last:pb-1.5">
               <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   Python
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   TypeScript
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   Node.js
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   React
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   NestJS
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   FastAPI
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   ASP.NET Core
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   C#
                 </li>
                 <li
-                  class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                   Go
                 </li>
               </ul>
@@ -367,28 +452,28 @@
           </header>
           <div class="my-3.2 last:pb-1.5">
             <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 AWS
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Azure
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 GCP
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Kubernetes
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Docker
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Terraform
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 RunPod
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Fly.io
               </li>
             </ul>
@@ -403,40 +488,40 @@
           </header>
           <div class="my-3.2 last:pb-1.5">
             <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 GitHub Actions
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Jenkins
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 CI/CD
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 PostgreSQL
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 MongoDB
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 MySQL
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 DynamoDB
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Kubernetes
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 EKS
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Sentry
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 Datadog
               </li>
-              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+              <li class="skill-tag px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                 OpenTelemetry
               </li>
             </ul>
@@ -457,25 +542,25 @@
             <section class="mb-4.5 break-inside-avoid">
               <ul class="list-inside pr-7">
                 <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  <a href="https://mensah-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" class="group">
+                  <a href="https://mensah-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" class="group" aria-label="Personal portfolio website (opens in new tab)">
                     Portfolio
                     <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
                   </a>
                 </li>
                 <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  <a href="https://www.linkedin.com/in/mensahjefferson/" target="_blank" rel="noopener noreferrer" class="group">
+                  <a href="https://www.linkedin.com/in/mensahjefferson/" target="_blank" rel="noopener noreferrer" class="group" aria-label="LinkedIn profile (opens in new tab)">
                     LinkedIn
                     <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
                   </a>
                 </li>
                 <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  <a href="https://github.com/cuuj69" target="_blank" rel="noopener noreferrer" class="group">
+                  <a href="https://github.com/cuuj69" target="_blank" rel="noopener noreferrer" class="group" aria-label="GitHub profile (opens in new tab)">
                     GitHub
                     <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
                   </a>
                 </li>
                 <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                  <a href="https://www.upwork.com/freelancers/~01c1dd984dd9dc1589" target="_blank" rel="noopener noreferrer" class="group">
+                  <a href="https://www.upwork.com/freelancers/~01c1dd984dd9dc1589" target="_blank" rel="noopener noreferrer" class="group" aria-label="Upwork freelance profile (opens in new tab)">
                     Upwork
                     <span class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
                   </a>
@@ -540,6 +625,40 @@
       isDarkMode = !isDarkMode;
       localStorage.setItem('darkMode', isDarkMode);
       applyTheme();
+    });
+
+    // Print/PDF Download Functionality
+    // const printButton = document.getElementById('printButton');
+    // printButton.addEventListener('click', () => {
+    //   window.print();
+    // });
+
+    // Keyboard navigation improvements
+    document.addEventListener('keydown', (e) => {
+      // Allow Escape key to close dialogs (if any in future)
+      if (e.key === 'Escape') {
+        // Future functionality
+      }
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('section-animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
     });
   </script>
 
